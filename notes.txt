@@ -1,0 +1,6 @@
+#need to login to the node and perform the below steps
+
+cd <directory where frontend files are there> 
+npm run build
+#need to configure aws before uploadding file to s3 bucket
+aws s3 sync build/ s3://<your-bucket-name>
